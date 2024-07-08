@@ -21,3 +21,7 @@ variable "common_tags" {
     terraform= true
   }
 }
+
+variable "zone_name" {
+  default = "bigmatrix.in"
+}

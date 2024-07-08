@@ -1,5 +1,5 @@
-resource "aws_ssm_parameter" "db" {
-  name  = "/${var.project_name}/${var.environment}/db"
+resource "aws_ssm_parameter" "db_sg_id" {
+  name  = "/${var.project_name}/${var.environment}/db_sg_id"
   type  = "String"
   value = module.db.Sg_id
 }
